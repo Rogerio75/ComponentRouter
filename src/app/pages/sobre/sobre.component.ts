@@ -15,7 +15,7 @@ constructor  (ActivatedRoute:ActivatedRoute){
 ngOnInit(): void {
   this.ActivatedRoute.params.subscribe(
      res => console.log(res.id, res.username)
-     error => error
+     
 
   )
 }
