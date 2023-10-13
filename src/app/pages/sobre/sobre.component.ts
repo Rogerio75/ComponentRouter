@@ -8,16 +8,19 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class SobreComponent implements OnInit {
 
-constructor  (ActivatedRoute:ActivatedRoute){
+constructor  (private activatedRoute:ActivatedRoute){
 
 
 }
 ngOnInit(): void {
-  this.ActivatedRoute.params.subscribe(
-     res => console.log(res.id, res.username)
-     
 
-  )
+this.activatedRoute.params.subscribe(
+  res => console.log(['res.id'], ['res.username'],res)
+
+)
+
+
+
 }
 
 
